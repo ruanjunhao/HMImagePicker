@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MainViewController.h
 //  HMImagePicker
 //
 //  Created by 刘凡 on 16/1/25.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MainViewController : UIViewController
 
 @end
-

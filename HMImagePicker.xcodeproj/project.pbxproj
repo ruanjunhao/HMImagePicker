@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		C233932B1C559FD700E6AB68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C233932A1C559FD700E6AB68 /* main.m */; };
 		C233932E1C559FD700E6AB68 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C233932D1C559FD700E6AB68 /* AppDelegate.m */; };
-		C23393311C559FD700E6AB68 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23393301C559FD700E6AB68 /* ViewController.m */; };
 		C23393341C559FD700E6AB68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C23393321C559FD700E6AB68 /* Main.storyboard */; };
 		C23393361C559FD700E6AB68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C23393351C559FD700E6AB68 /* Assets.xcassets */; };
 		C23393391C559FD700E6AB68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C23393371C559FD700E6AB68 /* LaunchScreen.storyboard */; };
+		C23393441C55A6DD00E6AB68 /* HMImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23393431C55A6DD00E6AB68 /* HMImagePickerController.m */; };
+		C23393471C55A6F400E6AB68 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23393461C55A6F400E6AB68 /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,14 @@
 		C233932A1C559FD700E6AB68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C233932C1C559FD700E6AB68 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C233932D1C559FD700E6AB68 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C233932F1C559FD700E6AB68 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C23393301C559FD700E6AB68 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C23393331C559FD700E6AB68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C23393351C559FD700E6AB68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C23393381C559FD700E6AB68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C233933A1C559FD700E6AB68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C23393421C55A6DD00E6AB68 /* HMImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMImagePickerController.h; sourceTree = "<group>"; };
+		C23393431C55A6DD00E6AB68 /* HMImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMImagePickerController.m; sourceTree = "<group>"; };
+		C23393451C55A6F400E6AB68 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		C23393461C55A6F400E6AB68 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +61,11 @@
 		C23393281C559FD700E6AB68 /* HMImagePicker */ = {
 			isa = PBXGroup;
 			children = (
+				C23393411C55A1D900E6AB68 /* HMImagePicker */,
 				C233932C1C559FD700E6AB68 /* AppDelegate.h */,
 				C233932D1C559FD700E6AB68 /* AppDelegate.m */,
-				C233932F1C559FD700E6AB68 /* ViewController.h */,
-				C23393301C559FD700E6AB68 /* ViewController.m */,
+				C23393451C55A6F400E6AB68 /* MainViewController.h */,
+				C23393461C55A6F400E6AB68 /* MainViewController.m */,
 				C23393321C559FD700E6AB68 /* Main.storyboard */,
 				C23393351C559FD700E6AB68 /* Assets.xcassets */,
 				C23393371C559FD700E6AB68 /* LaunchScreen.storyboard */,
@@ -77,6 +81,15 @@
 				C233932A1C559FD700E6AB68 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C23393411C55A1D900E6AB68 /* HMImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				C23393421C55A6DD00E6AB68 /* HMImagePickerController.h */,
+				C23393431C55A6DD00E6AB68 /* HMImagePickerController.m */,
+			);
+			path = HMImagePicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +162,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C23393311C559FD700E6AB68 /* ViewController.m in Sources */,
 				C233932E1C559FD700E6AB68 /* AppDelegate.m in Sources */,
+				C23393441C55A6DD00E6AB68 /* HMImagePickerController.m in Sources */,
 				C233932B1C559FD700E6AB68 /* main.m in Sources */,
+				C23393471C55A6F400E6AB68 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +314,7 @@
 				C233933F1C559FD700E6AB68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
